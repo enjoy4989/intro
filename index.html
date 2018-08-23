@@ -1,131 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta content="text/html; charset=euc-kr">
+<title>HTML5</title>
+<style type="text/css">
+    body {
+        text-align: center;
+        color: #FFF;
+        width: 900px;
+    }
+    div#wapper {
+        width: 100%;
+        text-align: left;
+        min-height: 300px;
+        margin: 0 auto;
+    }
+    header, footer, nav, aside, section {
+        border: 1px solid #999;
+        margin: 5px;
+        padding: 10px;
+    }
+    header {
+        height: 50px;
+        background-color: orange;
+    }
+    nav, section, aside {
+        float: left;
+        height: 200px;
+    }
+    ul{
+        list-style: none;
+    }
+    div.menu ul li{
 
-    <style>
-        .container{
-            width: 960px;
-            border:1px solid gray;
-            margin: auto;
-        }
-        header{
-            /* display: inline-flex; */
-            border-bottom: 1px solid gray;
-            height: 48px;
-            position: fixed top;
-            text-align: right;
-        }
+        display: inline;
+        border: solid 1px gray;
+        
+    }
+    div.menu ul li a{
+        text-decoration: none;
+        border: solid 1px black;
+    }
+    nav ul li a{
+        border: solid 1px gray;
+        text-decoration: none;
+    }
 
-            #home{
+    #home{
+        width:80px;
+        padding: 1px;
+        background-color:#999;
+        border: 20px solid gold;
+        box-sizing: border-box;
+    }
+    #intro{
+        width:80px;
+        padding: 1px;
+        background-color:#999;
+        border: 20px solid gold;
+        box-sizing: border-box;
+    }
+    #gallery{
+        width:80px;
+        padding: 1px;
+        background-color:#999;
+        border: 20px solid gold;
+        box-sizing: border-box;
+    }
+    #rightnow{
+        width:80px;
+        padding: 1px;
+        background-color:#999;
+        border: 20px solid gold;
+        box-sizing: border-box;
+    }
 
-            }
-            #intro{
-
-            }
-            #gallery{
-
-            }
-            #rightnow{
-                
-            }
-
-        nav{
-            float: left;
-            width: 150px;
-            border-right: 1px solid gray;
-            text-align: left;
-        }
-
-        section{
-            float: left;
-            width: 510px;
-            height: 720px;
-            text-align: center;
-            border-right: 1px solid gray;
-            border-left: 1px solid gray;
-            margin-left: -1px;
-
-        }
-
-            article{
-                padding-top: 50px;
-            }
-            .article_btn1{
-                border: 3px solid gray;
-                text-align: center;
-
-            }
-            .article_btn2{
-                border: 3px solid gray;
-                text-align: center;
-            }
-
-        aside{
-            float: left;
-            border-left: 1px solid gray;
-            width: 290px;
-            text-align: center;
-            margin-left: -1px ;
-        } 
-
-        footer{
-            border-top: 1px solid gray;
-            text-align: center;
-            padding: 20px;
-            clear: both;
-        }
-
-    </style>
-
-    <title>EnjoyCode</title>
+    nav {
+        background-color: tomato;
+        width: 100px;
+    }
+    section {
+        background-color: royalblue;   
+        width: 604px;
+    }
+    aside {
+        background-color: limegreen;
+        width: 100px;
+    }
+    footer {
+        height: 50px;
+        background-color: dimgray;
+        position: relatiev;
+        clear: both;
+    }
+    article {
+        width: 90%;
+        margin: 20px;
+        background-color: black;
+    }
+</style>
+ 
 </head>
-
 <body>
-    <div class="container">
-    <header>
-        <a id="home" href="#">홈</a>
-        <a id="intro" href="#">소개</a>
-        <a id="gallery" href="#">갤러리</a>
-        <a id="rightnow" href="#">지금이순간</a>
-    </header>
-
-    <nav class="nav">
-        <ul>
-            <li>책</li>
-            <li>이슈</li>
-            <li>음식</li>
-            <li>여행</li>
-            <li>테크</li>
-            <li>운동</li>
-        </ul>
-    </nav>
-
-    <section>
-        <div class="section_header">
-            <h2>앤조이코드</h2><br>
-            <p>"웃음 없는 하루는 낭비한 하루다."</p>
-            <p>-찰리 채플린, 영국 희극배우-</p>
-        </div>
-
-        <article>
-            <span class="article_btn1">소개</span>
-            <span class="article_btn2">갤러리</span>
-            <div class="article_pic" href="#" img src="" alt="">빅픽쳐</div>
-        </article>
-    </section>
-
-    <aside>
-        광고
-    </aside>
-   
-
-    <footer>
-        <h4>Copyright 2018, EnjoyCode</h4>
-    </footer>
+    <div id="wapper">
+        <!--헤더시작-->
+        <header>
+            <div class="menu">
+                <ul>
+                    <li id="home"><a href="#">홈</a></li>
+                    <li id="intro"><a href="#">소개</a></li>
+                    <li id="gallery"><a href="#">갤러리</a></li>
+                    <li id="rightnow"><a href="#">지금이순간</a></li>
+                </ul>
+            </div>
+        </header>
+        <!--네비게이션-->
+        <nav>
+            <ul>
+                <li><a href="#">책</a></li>
+                <li><a href="#">이슈</a></li>
+                <li><a href="#">음식</a></li>
+                <li><a href="#">여행</a></li>
+                <li><a href="#">테크</a></li>
+                <li><a href="#">운동</a></li>
+            </ul>
+        </nav>
+        <!--콘텐츠부분-->
+        <section>
+            <p>section</p>
+            <article>
+                <p>article</p>
+            </article>
+        </section>
+        <!--사이드바-->
+        <aside>
+            <p>aside</p>
+        </aside>
+        <!--풋터-->
+        <footer>footer</footer>
     </div>
 </body>
-
 </html>
